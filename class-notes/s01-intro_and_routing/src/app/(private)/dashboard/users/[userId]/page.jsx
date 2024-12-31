@@ -13,3 +13,12 @@ const UserDetail = ({ params }) => {
 };
 
 export default UserDetail;
+
+//* Return a list of 'params' to populate
+
+export async function generateStaticParams() {
+    const userArr = [1, 2, 3, 4]
+    return userArr.map((userId) => ({
+        userId: userId.toString()
+    }))
+}
