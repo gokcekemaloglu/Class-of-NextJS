@@ -1,4 +1,3 @@
-"use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Fragment } from "react";
@@ -10,7 +9,6 @@ import {
   MenuItems,
   Transition,
 } from "@headlessui/react";
-import { useAuthContext } from "@/context/AuthContext";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
