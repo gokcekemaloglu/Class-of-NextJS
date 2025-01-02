@@ -28,19 +28,19 @@ const Navbar = () => {
             {/* //? Next.js, import edilen dosyaya göre image genişliğini ve yüksekliğini otomatik olarak belirler ancak Next.js'nin build işlemi sırasında remote dosyalara erişimi olmadığından, genişlik ve yükseklik özelliklerini manuel olarak sağlamanız gerekir. */}
             {/* //* farklı domainlerden alınan image'ler için ilgili domainler config dosyasında belirtilmelidir. */}
 
-            <img
+            {/* <img
               src="https://clarusway.com/wp-content/uploads/2022/12/clarusway-logo-black.png"
               alt="logo"
               width={150}
-            />
-            {/* <Image
+            /> */}
+            <Image
               width={150}
               height={50}
               // src="/clarusway-logo.png"
               // src={logo}
               src="https://clarusway.com/wp-content/uploads/2022/12/clarusway-logo-black.png"
               alt=""
-            /> */}
+            />
           </Link>
         </div>
         <ul className="flex">

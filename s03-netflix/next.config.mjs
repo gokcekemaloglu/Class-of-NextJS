@@ -3,7 +3,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "clarusway.com",
+        protocol: "https",
+        hostname: " ",
+      },
+      {
+        protocol: "https",
+        hostname: " ",
       },
     ],
   },

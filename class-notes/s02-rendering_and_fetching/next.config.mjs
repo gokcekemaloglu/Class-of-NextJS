@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        hostname: "clarusway.com",
+        hostname: "reqres.in",
       },
     ],
   },

@@ -9,9 +9,13 @@ const Users = () => {
       <h1 className="text-3xl font-bold underline text-center">
         Hello, this is Users Page
       </h1>
-      <nav className= 'flex flex-col p-2'>
+      <nav className="flex flex-col p-2">
         {userArr.map((user) => (
-          <Link key={user} href={`/dashboard/users/${user}`}>
+          <Link
+            key={user}
+            href={`/dashboard/users/${user}`}
+            className="underline"
+          >
             Go User Detail - {user}
           </Link>
         ))}
