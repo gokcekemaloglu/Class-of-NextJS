@@ -1,10 +1,10 @@
 import React from 'react'
 
-const MovieSection = () => {
+const MovieSection1 = () => {
   return (
     // MovieCard
     <div>MovieSection</div>
   )
 }
 
-export default MovieSection
+export default MovieSection1
