@@ -11,7 +11,7 @@ const Login = () => {
 
   const {email, password} = info
 
-  const {signIn} = useAuthContext()
+  const {signIn, signInGoogle} = useAuthContext()
 
   const handleChange = (e) => setInfo({...info, [e.target.name]:e.target.value})
 
@@ -56,6 +56,7 @@ const Login = () => {
             <button
               type="button"
               className="btn-danger flex justify-between text-center "
+              onClick={signInGoogle}
             >
               Continue with Google
               <GoogleIcon />
