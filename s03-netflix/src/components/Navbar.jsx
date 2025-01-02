@@ -10,15 +10,18 @@ import {
   MenuItems,
   Transition,
 } from "@headlessui/react";
+import { useAuthContext } from "@/context/AuthContext";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 const Navbar = () => {
+
+  const {currentUser} = useAuthContext()
+  console.log(currentUser);
   const [showBackground, setShowBackground] = useState(false); 
- 
-   const currentUser = { displayName: "ashley miller" };
+  
 
   useEffect(() => {
     const handleScroll = () => {
