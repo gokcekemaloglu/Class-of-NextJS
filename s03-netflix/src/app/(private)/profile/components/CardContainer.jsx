@@ -1,5 +1,7 @@
+"use client"
 import React from 'react'
 import ProfileCard from './ProfileCard'
+import { useAuthContext } from '@/context/AuthContext'
 
 const profilResim = [
   "/images/default-blue.png",
@@ -9,14 +11,15 @@ const profilResim = [
 ]
 
 const CardContainer = () => {
+  const {currentUser} = useAuthContext()
   return (
-    // ProfileCard
-    <div>
+    
+    <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-10">
       {
         profilResim.map((resim, index)=>(
           <ProfileCard key={index}
             resim={resim}
-            isim={`Guest-${index+1}`}
+            isim={ (index == 0 && currentUser) ? currentUser?.displayName : `Guest-${index+1}` }
           />
         ))
       }
