@@ -7,6 +7,7 @@ import {
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signInWithPopup,
+  signOut,
 } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "@/auth/firebase";
@@ -66,6 +67,11 @@ const AuthContextProvider = ({ children }) => {
       });
   };
 
+  const logOut = () => {
+    signOut(auth)
+    toastSuccessNotify("logout success")
+  }
+
   const userTakip = () => {
       onAuthStateChanged(auth, (user) => {
         if (user) {
@@ -80,7 +86,7 @@ const AuthContextProvider = ({ children }) => {
 
 
   return (
-    <YetkiContext.Provider value={{ createKullanici, signIn, signInGoogle }}>
+    <YetkiContext.Provider value={{ createKullanici, signIn, signInGoogle, currentUser, logOut }}>
       {" "}
       {children}{" "}
     </YetkiContext.Provider>

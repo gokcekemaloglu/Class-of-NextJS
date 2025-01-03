@@ -1,8 +1,18 @@
 import React from 'react'
 
-const ProfileCard = () => {
+const ProfileCard = ({resim, isim}) => {
   return (
-    <div>ProfileCard</div>
+    <div>
+    
+      <div>
+        <img src={resim} alt="resim" />
+      </div>
+
+      <div>
+        <h2>{isim}</h2>
+      </div>
+
+    </div>
   )
 }
 
