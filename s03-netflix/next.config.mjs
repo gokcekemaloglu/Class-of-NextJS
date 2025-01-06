@@ -10,5 +10,5 @@ const nextConfig = {
     ],
   },
 };
-
+// nextConfig.js deki Image yi kullanacaksak dışarıdan aldığımız bütün resimlerin yollarını buraya yazmalıyız
 export default nextConfig;

@@ -2,12 +2,14 @@ import { getirVideoKey } from '@/helpers/movieFunctions';
 import React from 'react'
 
 const MovieDetail = async ({params: {movieId}}) => {
-    console.log(movieId);
+    // console.log(movieId);
+    // yol ile gelen id yi üstte yakaladık, dosyanın adı ile buradaki yakalanan isim aynı olmalı
 
     const videoKey = await getirVideoKey(movieId)
     
   return (
-    <div className="w-10/12 lg:w-full mx-auto">
+    <div>
+      <div className="w-10/12 lg:w-full mx-auto">
         <div
           className="embed-responsive embed-responsive-16by9 relative w-full overflow-hidden"
           style={{ paddingTop: "50%" }}
@@ -21,6 +23,7 @@ const MovieDetail = async ({params: {movieId}}) => {
           ></iframe>
         </div>
       </div>
+    </div>
   )
 }
 

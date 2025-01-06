@@ -4,6 +4,7 @@ import React from 'react'
 const ProfileCard = ({resim, isim}) => {
   let router = useRouter()
   return (
+    // tıklanınca movies yoluyla movies in page ine git
     <div className="w-44 mx-auto cursor-pointer group"
       onClick={()=>router.push("/movies")}
     >

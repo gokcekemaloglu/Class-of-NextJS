@@ -1,6 +1,10 @@
 import React from "react";
 import CardContainer from "./components/CardContainer";
 
+export const metadata={
+  title:"Profile",
+  description:"This is Profile"
+}
 
 const Profile = () => {
   return (

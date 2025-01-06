@@ -2,6 +2,7 @@
 
 const API_KEY = process.env.TMDB_KEY
 
+// istediğimiz her türlü filmi (upcoming, popular vs getiren fonk)
 export const getirMovies = async (type) => {
     try {
         const res = await fetch(`https://api.themoviedb.org/3/movie/${type}?api_key=${API_KEY}`)
@@ -14,6 +15,7 @@ export const getirMovies = async (type) => {
     }
 }
 
+// aldığı filmin id sine göre,o filmin videosunu basmak için, youtube un istediği key i getiren Fontdiner_Swanky. bu key iframe e gömülecek
 export const getirVideoKey = async (id) => {
     const res = await fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${API_KEY}`)
 

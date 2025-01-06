@@ -8,6 +8,7 @@ import AuthContextProvider from "@/context/AuthContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// burası approuter gibi rotaları yönetiyor
 export const metadata = {
   title: "Netflix",
   description: "A movie platform",

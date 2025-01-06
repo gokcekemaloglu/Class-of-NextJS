@@ -11,6 +11,7 @@ const profilResim = [
 ]
 
 const CardContainer = () => {
+  // profil card da 4 resim basılacak, ilk resmin altına kullanıcı ismimiz gitsin dedik
   const {currentUser} = useAuthContext()
   return (
     

@@ -3,8 +3,10 @@ import React from 'react'
 
 const MovieSection1 = async () => {
 
+  // now_playing e ait filmler geldi
   const filmler = await getirMovies("now_playing")
-
+  
+  // üstte gelen filmlerin ilkinin id sini videokey için altta kullandık
   const videoKey = await getirVideoKey(filmler[0].id)
 
   return (

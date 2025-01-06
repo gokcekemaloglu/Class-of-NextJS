@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation"
 
+// normalde next.js defauld not found sayfası yapıyor, biz onu ezdik, ismi not-found olmak zorunda
 export default function NotFound() {
     const router = useRouter()
     return(
